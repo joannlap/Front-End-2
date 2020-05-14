@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home</title>
+  <title>match</title>
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -14,20 +14,22 @@
     <nav>
       <ul>
         <li><img src="img/components/person-icon.svg" alt=""></li>
-        <li><img src="img/components/baby-icon.svg" alt=""></li>
+        <li><img id="logo" src="img/components/logo.svg" alt=""></li>
+        <li id="baby_icon"><img src="img/components/baby-icon.svg" alt=""></li>
         <li><img src="img/components/chat-icon.svg" alt=""></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <img src="img/components/collin.jpg" alt="">
+  <figure class="match_image">
+    <img src="img/components/match.png" alt="">
+  </figure>
 
-    <section>
-      <a href="home.html"><button class="reveal">Sign up</button></a>
-      <button type="button" class='keepswiping'>Sign up with Twitter</button>
-    </section>
-  </main>
+  <section>
+    <h1>You've got a match!</h1>
+    <a href="profile.html"><button class="reveal">Reveal identity</button></a>
+    <a href="home.html"><button type="button" class='keepswiping'>Keep on swiping</button></a>
+  </section>
 </body>
 
 </html>
