@@ -4,11 +4,9 @@
   margin: 0;
   font-family: "Montserrat",
     sans-serif;
-
 }
 
 /* login page */
-
 
 .logo {
   padding: 3em;
@@ -35,7 +33,6 @@ button {
   font-weight: 600;
   cursor: pointer;
   outline: none;
-
 }
 
 .twitter {
@@ -60,7 +57,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 ul {
@@ -104,9 +100,9 @@ li>#logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2.5em;
-
 }
 
+/* nav bar (decline, superlike, like) */
 main section {
   display: flex;
   flex-direction: column;
@@ -122,7 +118,6 @@ main section nav {
   height: 200px;
   position: absolute;
   bottom: -50px;
-  /* ovelow: hidden; */
 }
 
 
@@ -270,7 +265,6 @@ figcaption {
   height: 60px;
   border-radius: 50%;
   z-index: 6;
-
 }
 
 figcaption p:first-child {
@@ -297,6 +291,8 @@ button.btn_interest {
   color: black;
 }
 
+/* iPhone X screensize */
+
 @media screen and (max-width: 375px) {
   .container {
     grid-template-columns: 1fr;
@@ -321,7 +317,7 @@ button.btn_interest {
 
   }
 
-  /* button_profile */
+  /* matched profile */
 
   button.btn_interest {
     padding: 1em 0 1em 0;
@@ -377,3 +373,4 @@ button.btn_interest {
     font-size: 20px;
   }
 }
+
