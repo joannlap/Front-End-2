@@ -24,7 +24,7 @@
   </style>
 
   <script>
-    //https://stackoverflow.com/questions/1484506/random-color-generator
+    //returns a random generated hex value 
     function getRandomColor() {
       let letters = '0123456789BCDEF';
       let color = '#';
@@ -33,13 +33,18 @@
       }
       return color;
     }
+    //https://www.kirupa.com/html5/generating_random_colors.htm
 
+    //append trail elements
+    //make an empty array to store the trailelements
+    //to be able to access them later to change their position
     let trailElements = [];
-    for (let i = 0; i < 12; i++) {
-      let element = document.createElement('div');
-      element.className = 'trail';
-      document.body.appendChild(element);
-      trailElements.push(element);
+    //loop through the created element
+    for (let i = 0; i < 10; i++) {
+      let trails = document.createElement('div');
+      trails.className = 'trail';
+      document.body.appendChild(trails);
+      trailElements.push(trails);
     }
 
     let currentCircle = 0; //current circle index
@@ -49,12 +54,11 @@
       circle.style.left = (e.clientX - 2) + "px";
       circle.style.top = (e.clientY - 2) + "px";
       circle.style.backgroundColor = `${getRandomColor()}`;
-
-      if (currentCircle == 11) {
-        currentCircle = 0;
-      } else {
-        currentCircle += 1;
-      }
+      // cycling through the elements 
+      // adding 1 to currentCircle index everytime mousemove event fires.
+      // remainder operater being used to get a valid array index to pick the element 
+      // you want to position during a giving event
+      currentCircle = (currentCircle + 1) % trailElements.length
     });
   </script>
 </body>
