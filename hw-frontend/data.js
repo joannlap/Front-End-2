@@ -40,16 +40,17 @@ const animals = [{
   }
 ];
 
-// haalt alleen de namen uit de array
-const animalName = animals.map(getName => getName.name);
-console.log(animalName)
+// haalt alleen de species uit de array
+const animalSpecies = animals.map(getSpecie => getSpecie.species);
+console.log(animalSpecies)
 
 // filtert alle honden uit de array
 const onlyDog = animals.filter(animalSpecie => animalSpecie.species === 'dog')
 console.log(onlyDog)
 
-// haalt de duurste hond uit de array
-const mostExpAnimal = animals.reduce(function (expensive, animal) {
-  return (expensive.cost || 0) > animal.cost ? expensive : animal;
-}, {});
-console.log(mostExpAnimal)
+// haalt het totale aantal per soort uit de array
+// prints 4 dogs, 2 pigs and 2 fishes
+const totalSpecies = animals.reduce(function (name, animal) {
+  return name + animal
+})
+console.log(totalSpecies)
