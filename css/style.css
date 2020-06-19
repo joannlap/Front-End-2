@@ -50,6 +50,12 @@ section {
   flex-direction: column;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /********************** 
     HOME
@@ -334,22 +340,15 @@ figcaption p:last-child {
   font-style: italic;
 }
 
-.fillimage img {
+.fillimage {
   position: absolute;
   height: 80%;
   width: 100%;
   object-fit: cover;
-  filter: blur(10px);
+  filter: blur(15px);
 }
 
-/* .fillimage>img {
-  display: block;
-  width: 100%;
-  opacity: 0; */
-/* visually hide the img element */
-
-
-.fillimage .is-loaded {
+img.is-loaded {
   filter: none;
   transition: filter 1s;
 }
