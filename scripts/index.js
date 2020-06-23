@@ -1,6 +1,5 @@
 let revealId = document.querySelector(".fillimage");
 
-console.log(revealId.classList);
 window.addEventListener('load', () => {
   setTimeout(() => {
     revealId.classList.add('is-loaded');
