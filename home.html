@@ -20,55 +20,53 @@
     </nav>
   </header>
 
-  <div class="filterContainer">
-    <div class="select-box">
-      <div class="location-container">
-        <form class="location" method=POST>
-          <input type="radio" class="radio" name="category">
-          <label for="Toronto">Toronto</label>
-        </form>
-        <form class="location">
-          <input type="radio" class="radio" name="category">
-          <label for="Hamilton">Hamilton</label>
-        </form>
-        <form class="location">
-          <input type="radio" class="radio" name="category">
-          <label for="Mississauga">Mississauga</label>
-        </form>
-        <form class="location">
-          <input type="radio" class="radio" name="category">
-          <label for="Kitchener">Kitchener</label>
-        </form>
-        <form class="location">
-          <input type="radio" class="radio" name="category">
-          <label for="Quebec">Quebec</label>
-        </form>
-        <form class="location">
-          <input type="radio" class="radio" name="category">
-          <label for="Vancouver">Vancouver</label>
-        </form>
-        <form class="location">
-          <input type="radio" class="radio" name="category">
-          <label for="Montreal">Montreal</label>
-        </form>
-      </div>
-      <div class="selected">
-        Select location
-      </div>
+  <div class="filter">
+    <input type="checkbox" class="filter_btn">
+    <div class="selected">
+      Select location
+    </div>
+    <div class="location-container">
+      <form class="location" method=POST>
+        <input type="radio" class="radio" name="category">
+        <label for="Toronto">Toronto</label>
+      </form>
+      <form class="location">
+        <input type="radio" class="radio" name="category">
+        <label for="Hamilton">Hamilton</label>
+      </form>
+      <form class="location">
+        <input type="radio" class="radio" name="category">
+        <label for="Mississauga">Mississauga</label>
+      </form>
+      <form class="location">
+        <input type="radio" class="radio" name="category">
+        <label for="Kitchener">Kitchener</label>
+      </form>
+      <form class="location">
+        <input type="radio" class="radio" name="category">
+        <label for="Quebec">Quebec</label>
+      </form>
+      <form class="location">
+        <input type="radio" class="radio" name="category">
+        <label for="Vancouver">Vancouver</label>
+      </form>
+      <form class="location">
+        <input type="radio" class="radio" name="category">
+        <label for="Montreal">Montreal</label>
+      </form>
     </div>
   </div>
 
   <div class="ageContainer">
-    <div class="select-age">
-      <div class="slider-container">
-        <form class="age" action="match.html">
-          <input type="range" name="age" id="age" min="18" max="100" step="1" value="18">
-          <output class="age-output" for="age"></output>
-        </form>
-      </div>
-      <div class="selected-age">
-        Select age
-      </div>
+    <input type="checkbox" class="age_btn">
+    <div class="selected-age">
+      Select age
+    </div>
+    <div class="slider-container">
+      <form class="age" method=POST>
+        <input type="range" name="age" id="age" min="18" max="100" step="1" value="18">
+        <output class="age-output" for="age"></output>
+      </form>
     </div>
   </div>
 

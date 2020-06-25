@@ -79,7 +79,7 @@ ul {
   padding: 6em 2em 3em 2em;
 }
 
-.filterContainer,
+.filter,
 .ageContainer {
   margin-top: 100px;
   padding-left: 80px;
@@ -87,14 +87,25 @@ ul {
   flex-direction: row;
 }
 
-.select-box,
-.select-age {
+.filter_btn {
+  position: relative;
+  top: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  width: 100%;
+  cursor: pointer;
+  /* opacity: 0; */
+  z-index: 1;
+}
+
+.filter,
+.ageContainer {
   display: flex;
   width: 250px;
   flex-direction: column;
 }
 
-.select-box .location-container {
+.filter .location-container {
   background: #FFE0AC;
   color: black;
   max-height: 0;
@@ -114,22 +125,28 @@ ul {
   order: 0;
 }
 
-.select-box .location .radio {
+.radio {
   display: none;
 }
 
-.select-box .location-container.active {
+.filter_btn:checked~.location-container {
+  /* display: block; */
   max-height: 120px;
   overflow-y: scroll;
 }
 
-.select-box .location,
+/* .select-box .location-container.active {
+  max-height: 120px;
+  overflow-y: scroll;
+} */
+
+.filter .location,
 .selected {
   padding: 12px 24px;
   cursor: pointer;
 }
 
-.select-box label {
+.filter label {
   cursor: pointer;
 }
 
@@ -137,11 +154,13 @@ ul {
   background: #FFF3E0;
 }
 
+
+
 /* ********
     AGE
 ********** */
 
-.select-age .slider-container {
+.ageContainer .slider-container {
   background: #FFE0AC;
   color: black;
   max-height: 0;
@@ -152,15 +171,32 @@ ul {
   order: 1;
 }
 
-.select-age .age,
+.ageContainer .age,
 .selected-age {
   padding: 12px 24px;
   cursor: pointer;
 }
 
-.select-age .slider-container.active {
+.age_btn:checked~.slider-container {
+  /* display: block; */
   max-height: 120px;
   overflow-y: scroll;
+}
+
+/* .ageContainer .slider-container.active {
+  max-height: 120px;
+  overflow-y: scroll;
+} */
+
+.age_btn {
+  position: relative;
+  top: 2rem;
+  bottom: 2rem;
+  left: 3rem;
+  width: 100%;
+  cursor: pointer;
+  /* opacity: 0; */
+  z-index: 1;
 }
 
 nav {

@@ -29,3 +29,5 @@ age.addEventListener('input', function () {
 
 
 // https: //developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+// https://stackoverflow.com/questions/13475016/how-to-update-html5-range-on-change-of-a-text-input
