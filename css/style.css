@@ -79,6 +79,90 @@ ul {
   padding: 6em 2em 3em 2em;
 }
 
+.filterContainer,
+.ageContainer {
+  margin-top: 100px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.select-box,
+.select-age {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+}
+
+.select-box .location-container {
+  background: #FFE0AC;
+  color: black;
+  max-height: 0;
+  transition: all 0.4s;
+  border-radius: 5px;
+  overflow: hidden;
+  order: 1;
+}
+
+.selected,
+.selected-age {
+  position: relative;
+  background: #8886C5;
+  border-radius: 5px;
+  color: #f9f9f9;
+  font-weight: 600;
+  order: 0;
+}
+
+.select-box .location .radio {
+  display: none;
+}
+
+.select-box .location-container.active {
+  max-height: 120px;
+  overflow-y: scroll;
+}
+
+.select-box .location,
+.selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.location:hover {
+  background: #FFF3E0;
+}
+
+/* ********
+    AGE
+********** */
+
+.select-age .slider-container {
+  background: #FFE0AC;
+  color: black;
+  max-height: 0;
+  width: 100%;
+  transition: all 0.4s;
+  border-radius: 5px;
+  overflow: hidden;
+  order: 1;
+}
+
+.select-age .age,
+.selected-age {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-age .slider-container.active {
+  max-height: 120px;
+  overflow-y: scroll;
+}
+
 nav {
   flex: 1 0 auto;
 }
@@ -388,6 +472,12 @@ figcaption {
   padding: 2em;
   z-index: 6;
 }
+
+
+
+/********************** 
+    PROFILE
+**********************/
 
 
 @media screen and (min-width: 700px) {
