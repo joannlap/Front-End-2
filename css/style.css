@@ -109,12 +109,16 @@ ul {
   transition: all 0.4s;
   border-radius: 5px;
   overflow: hidden;
-  order: 1;
 }
 
 /* a {
   text-decoration: none;
 } */
+.location>input[type="submit"] {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+}
 
 .selected,
 .selected-age {
@@ -123,15 +127,10 @@ ul {
   border-radius: 5px;
   color: #f9f9f9;
   font-weight: 600;
-  order: 0;
 }
 
-.radio {
-  display: none;
-}
 
 .filter_btn:checked~.location-container {
-  /* display: block; */
   max-height: 120px;
   overflow-y: scroll;
 }
@@ -169,7 +168,6 @@ ul {
   transition: all 0.4s;
   border-radius: 5px;
   overflow: hidden;
-  order: 1;
 }
 
 .ageContainer .age,

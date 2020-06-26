@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home">
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <source srcset="img/components/person-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/icon-person.svg" />
+        </li>
+        <li>
+          <source srcset="img/components/logo.svg" media="(min-width: 800px)">
+          <img id="logo" src="img/components/logo-comp.svg">
+        </li>
+        <li id="baby_icon">
+          <source srcset="img/components/baby-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/babyicon-comp.svg" alt="">
+        </li>
+        <li>
+          <source srcset="img/components/chat-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/chat-comp.svg" alt="">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="filter">
+    <input type="checkbox" class="filter_btn">
+    <div class="selected">
+      Select location
+    </div>
+    <div class="location-container">
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value="Toronto" name="category">
+        </div>
+      </form>
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value="Hamilton" name="category">
+        </div>
+      </form>
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value="Mississauga" name="category">
+        </div>
+      </form>
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value=" Kitchener" name="category">
+        </div>
+      </form>
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value="Quebec" name="category">
+        </div>
+      </form>
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value="Vancouver" name="category">
+        </div>
+      </form>
+      <form action="toronto.html">
+        <div class="location">
+          <input type="submit" value="Montreal" name="category">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="ageContainer">
+    <input type="checkbox" class="age_btn">
+    <div class="selected-age">
+      Select age
+    </div>
+    <div class="slider-container">
+      <form class="age" method=POST>
+        <input type="range" name="age" id="age" min="18" max="100" step="1" value="18">
+        <output class="age-output" for="age"></output>
+      </form>
+    </div>
+  </div>
+
+  <ul class="container">
+    <li>
+      <section>
+        <figure><img src="img/components/collin.png" alt="">
+          <figcaption class="card_cap">
+            <h2>Collin, 21</h2>
+            <h3>Toronto, Canada</h3>
+          </figcaption>
+        </figure>
+        <form action="match.html">
+          <div class="decline">
+            <div class="white-btn">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
+            </div>
+          </div>
+          <div class="superlike">
+            <div class="white-btn">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
+            </div>
+          </div>
+          <div class="like">
+            <div class="white-btn">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
+            </div>
+          </div>
+        </form>
+      </section>
+    </li>
+    <li>
+      <section>
+        <figure><img src="img/components/dre.png" alt="">
+          <figcaption class="card_cap">
+            <h2>Dré, 20</h2>
+            <h3>Toronto, Canada</h3>
+          </figcaption>
+        </figure>
+        <form action="match.html">
+          <div class="decline">
+            <div class="white-btn">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
+            </div>
+          </div>
+          <div class="superlike">
+            <div class="white-btn">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
+            </div>
+          </div>
+          <div class="like">
+            <div class="white-btn">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
+            </div>
+          </div>
+        </form>
+      </section>
+    </li>
+
+
+  </ul>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
