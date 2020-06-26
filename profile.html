@@ -16,13 +16,26 @@
   <header>
     <nav>
       <ul>
-        <li><img src="img/components/person-icon.svg" alt=""></li>
-        <li><img id="logo" src="img/components/logo.svg" alt=""></li>
-        <li id="baby_icon"><img src="img/components/baby-icon.svg" alt=""></li>
-        <li><img src="img/components/chat-icon.svg" alt=""></li>
+        <li>
+          <source srcset="img/components/person-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/icon-person.svg" />
+        </li>
+        <li>
+          <source srcset="img/components/logo.svg" media="(min-width: 800px)">
+          <img id="logo" src="img/components/logo-comp.svg">
+        </li>
+        <li id="baby_icon">
+          <source srcset="img/components/baby-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/babyicon-comp.svg" alt="">
+        </li>
+        <li>
+          <source srcset="img/components/chat-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/chat-comp.svg" alt="">
+        </li>
       </ul>
     </nav>
   </header>
+
 
 
   <div class="gradient">

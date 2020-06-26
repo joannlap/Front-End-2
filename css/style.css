@@ -84,25 +84,22 @@ ul {
   margin-top: 100px;
   padding-left: 80px;
   display: flex;
-  flex-direction: row;
+  width: 250px;
+  flex-direction: column;
+}
+
+.ageContainer {
+  margin-top: 0;
 }
 
 .filter_btn {
   position: relative;
   top: 2rem;
   bottom: 2rem;
-  left: 2rem;
-  width: 100%;
+  width: 150%;
   cursor: pointer;
-  /* opacity: 0; */
+  opacity: 0;
   z-index: 1;
-}
-
-.filter,
-.ageContainer {
-  display: flex;
-  width: 250px;
-  flex-direction: column;
 }
 
 .filter .location-container {
@@ -114,6 +111,10 @@ ul {
   overflow: hidden;
   order: 1;
 }
+
+/* a {
+  text-decoration: none;
+} */
 
 .selected,
 .selected-age {
@@ -192,10 +193,10 @@ ul {
   position: relative;
   top: 2rem;
   bottom: 2rem;
-  left: 3rem;
-  width: 100%;
+  left: 1rem;
+  width: 150%;
   cursor: pointer;
-  /* opacity: 0; */
+  opacity: 0;
   z-index: 1;
 }
 

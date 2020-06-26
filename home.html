@@ -12,10 +12,22 @@
   <header>
     <nav>
       <ul>
-        <li><img src="img/components/person-icon.svg" alt=""></li>
-        <li><img id="logo" src="img/components/logo.svg" alt=""></li>
-        <li id="baby_icon"><img src="img/components/baby-icon.svg" alt=""></li>
-        <li><img src="img/components/chat-icon.svg" alt=""></li>
+        <li>
+          <source srcset="img/components/person-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/icon-person.svg" />
+        </li>
+        <li>
+          <source srcset="img/components/logo.svg" media="(min-width: 800px)">
+          <img id="logo" src="img/components/logo-comp.svg">
+        </li>
+        <li id="baby_icon">
+          <source srcset="img/components/baby-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/babyicon-comp.svg" alt="">
+        </li>
+        <li>
+          <source srcset="img/components/chat-icon.svg" media="(min-width: 800px)">
+          <img src="img/components/chat-comp.svg" alt="">
+        </li>
       </ul>
     </nav>
   </header>
@@ -25,36 +37,36 @@
     <div class="selected">
       Select location
     </div>
-    <div class="location-container">
-      <form class="location" method=POST>
-        <input type="radio" class="radio" name="category">
+    <form class="location-container" action="match.html">
+      <div class="location">
+        <input type="submit" value="search" class="radio" name="category">
         <label for="Toronto">Toronto</label>
-      </form>
-      <form class="location">
+      </div>
+      <div class="location">
         <input type="radio" class="radio" name="category">
-        <label for="Hamilton">Hamilton</label>
-      </form>
-      <form class="location">
+        <label for=" Hamilton">Hamilton</label>
+      </div>
+      <div class="location">
         <input type="radio" class="radio" name="category">
         <label for="Mississauga">Mississauga</label>
-      </form>
-      <form class="location">
+      </div>
+      <div class="location">
         <input type="radio" class="radio" name="category">
         <label for="Kitchener">Kitchener</label>
-      </form>
-      <form class="location">
+      </div>
+      <div class="location">
         <input type="radio" class="radio" name="category">
         <label for="Quebec">Quebec</label>
-      </form>
-      <form class="location">
+      </div>
+      <div class="location">
         <input type="radio" class="radio" name="category">
         <label for="Vancouver">Vancouver</label>
-      </form>
-      <form class="location">
+      </div>
+      <div class="location">
         <input type="radio" class="radio" name="category">
         <label for="Montreal">Montreal</label>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 
   <div class="ageContainer">
@@ -82,17 +94,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -109,17 +124,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -136,17 +154,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -163,17 +184,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -190,17 +214,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -217,17 +244,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -244,17 +274,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
@@ -271,17 +304,20 @@
         <form action="match.html">
           <div class="decline">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/cross.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/cross.svg" media="(min-width: 800px)"
+                src="img/components/cross-comp.svg" name="dislike">
             </div>
           </div>
           <div class="superlike">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/star.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/star.svg" media="(min-width: 800px)"
+                src="img/components/star-comp.svg" name="dislike">
             </div>
           </div>
           <div class="like">
             <div class="white-btn">
-              <input type="image" value="dislike" src="img/components/heart.svg" name="dislike">
+              <input type="image" value="dislike" srcset="img/components/heart.svg" media="(min-width: 800px)"
+                src="img/components/heart-comp.svg" name="dislike">
             </div>
           </div>
         </form>
