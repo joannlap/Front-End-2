@@ -1,33 +1,58 @@
-const selectedAge = document.querySelector(".selected-age")
-const selectedLocation = document.querySelector(".selected")
 const locationContainer = document.querySelector(".location-container")
-const sliderContainer = document.querySelector(".slider-container");
-const locationList = document.querySelectorAll(".location")
-const age = document.querySelector("#age")
-const output = document.querySelector(".age-output")
-output.textContent = age.value;
+const allLocations = Array.from(document.querySelectorAll("h3"));
+const allCards = Array.from(document.querySelectorAll('.filterValue'));
 
-selectedAge.addEventListener('click', () => {
-  sliderContainer.classList.toggle("active")
+const locationList = ['Toronto',
+  'Vancouver',
+  'Montreal',
+  'Kitchener',
+  'Quebec',
+  'Hamilton',
+  'Mississauga'
+];
+
+// loads list of location and adds and id and class to the created element
+locationList.forEach(function getLocations(location) {
+  let listItem = document.createElement('li');
+  listItem.setAttribute('id', location)
+  listItem.textContent = location
+  listItem.classList.add('filterOption');
+  locationContainer.appendChild(listItem);
 });
 
-selectedLocation.addEventListener('click', () => {
-  locationContainer.classList.toggle("active")
-})
+// this function will get the exact value of the element
+function getEventTarget(e) {
+  e = e || window.event;
+  return e.target || e.srcElement;
+}
+// https://stackoverflow.com/questions/5116929/get-clicked-li-from-ul-onclick. Retrieved on 28 June 2020
 
-
-locationList.forEach(showLocation => {
-  showLocation.addEventListener('click', () => {
-    selectedLocation.innerHTML = showLocation.querySelector('label').innerHTML;
+// adds a click function and removes the class and sents target to the checklocation function
+locationContainer.onclick = function (event) {
+  allCards.forEach((card) => {
+    card.classList.remove('remove');
   })
-});
+  // welke locatie wordt opgehaald 
+  var target = getEventTarget(event);
+  checkLocation(target);
+  console.log(target)
+};
 
-age.addEventListener('input', function () {
-  output.textContent = age.value;
-})
+// als de h3 van de kaarten niet gelijk zijn aan de input van de gebruiker
+// dan wordt de class toegevoegd waar de overige locaties niet te zien zijn.
+function checkLocation(target) {
+  let index = 0;
+  allLocations.forEach((cardLocation) => {
+    if (cardLocation.innerHTML !== target.innerText) {
+      allCards[index].classList.add('remove');
+    }
+    index++;
+  });
+}
 
 
 
-// https: //developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
-// https://stackoverflow.com/questions/13475016/how-to-update-html5-range-on-change-of-a-text-input
+// https: //developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types. Retrieved on 19 June 2020
+// https: //dmitripavlutin.com/foreach-iterate-array-javascript/. Retrieved on 24 June 2020
+// https://www.w3schools.com/howto/howto_js_filter_elements.asp. Retrieved on 24 June 2020
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach. Retrieved on 26 June 2020

@@ -48,6 +48,7 @@ console.log(animalSpecies)
 const onlyDog = animals.filter(animalSpecie => animalSpecie.species === 'dog')
 console.log(onlyDog)
 
+
 // haalt het totale aantal per soort uit de array
 // prints 4 dogs, 2 pigs and 2 fishes
 const totalSpecies = animals.reduce(function (name, animal) {

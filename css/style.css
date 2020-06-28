@@ -84,7 +84,7 @@ ul {
   margin-top: 100px;
   padding-left: 80px;
   display: flex;
-  width: 250px;
+  width: 260px;
   flex-direction: column;
 }
 
@@ -94,12 +94,19 @@ ul {
 
 .filter_btn {
   position: relative;
-  top: 2rem;
-  bottom: 2rem;
-  width: 150%;
+  top: 3rem;
+  left: 1rem;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
   opacity: 0;
   z-index: 1;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 10px;
 }
 
 .filter .location-container {
@@ -111,14 +118,16 @@ ul {
   overflow: hidden;
 }
 
-/* a {
-  text-decoration: none;
-} */
-.location>input[type="submit"] {
+li.filterOption {
+  list-style: none;
+  font-size: 13px;
+}
+
+/* .location>input[type="submit"] {
   background-color: transparent;
   border: none;
   font-size: 15px;
-}
+} */
 
 .selected,
 .selected-age {
@@ -140,7 +149,7 @@ ul {
   overflow-y: scroll;
 } */
 
-.filter .location,
+.filter li.filterOption,
 .selected {
   padding: 12px 24px;
   cursor: pointer;
@@ -150,8 +159,12 @@ ul {
   cursor: pointer;
 }
 
-.location:hover {
+li.filterOption:hover {
   background: #FFF3E0;
+}
+
+.remove {
+  display: none;
 }
 
 
@@ -314,7 +327,7 @@ ul section form .white-btn {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  margin-bottom: 3.9em;
+  margin-bottom: 4em;
   overflow: hidden;
 }
 
