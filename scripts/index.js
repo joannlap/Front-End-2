@@ -32,10 +32,12 @@ const getEventTarget = (e) => {
 const checkLocation = (target) => {
   let index = 0;
   allLocations.forEach((cardLocation) => {
-    if (cardLocation.innerHTML !== target.innerText) {
+    if (cardLocation.innerHTML !== target.innerHTML) {
       allCards[index].classList.add('remove');
       console.log(allCards[index])
       console.log(index)
+      console.log(target.innerHTML)
+      console.log(cardLocation.innerHTML)
     }
     index++;
   });
